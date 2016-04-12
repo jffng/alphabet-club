@@ -20,7 +20,7 @@ String.prototype.replaceAll = function(search, replacement) {
 };
 
 function getResults(){
-    $('.loader').show();
+    $('.results').show();
     $('.prompt').hide();
     var neighborhood = $('.neighborhood').val();
     theLetter = $('.letter').val().toLowerCase();
@@ -72,7 +72,6 @@ function parseVenues(venues){
 
     console.log(matches);
     addResults(matches);
-    $('.results').show();
     $('.loader').html('Results');
     $('.loader').addClass('pasta');
 }
