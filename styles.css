@@ -93,7 +93,7 @@ ul,a {
     padding: 48px 18px;
 }
 .results >ul >li {
-    margin: 12px;
+    margin: 12px 0;
 }
 
 a:hover {
