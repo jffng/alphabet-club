@@ -72,6 +72,7 @@ function parseVenues(venues){
 
     console.log(matches);
     addResults(matches);
+    $('.results').show();
     $('.loader').html('Results');
     $('.loader').addClass('pasta');
 }

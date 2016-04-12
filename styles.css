@@ -16,11 +16,12 @@ ul,a {
     list-style: none;
     padding: 0 0;
     margin-top: 0;
-    font-size: 24px;
+    font-size: 18px;
     color: #fbedcb;
 }
 
 .container {
+    width: 100%;
     max-width: 640px;
     margin: 0 auto;
     /* font-family: 'Source Sans Pro', sans-serif; */
@@ -29,7 +30,7 @@ ul,a {
 
 .prompt {
     color: #ffe788;
-    padding: 48px 24px;
+    padding: 24px 12px;
     font-size: 48px;
     line-height: 1;
 }
@@ -86,16 +87,28 @@ ul,a {
 
 #map {
     height: 400px;
-    display: hidden;
+    display: none;
 }
 
 .results {
+    display: none;
     padding: 48px 18px;
 }
+.help {
+    font-size: 12px;
+    color: rgba(251, 241, 208, .7);
+}
+
 .results >ul >li {
     margin: 12px 0;
 }
 
 a:hover {
     color: #ffe788;
+}
+
+@media(max-width: 480px){
+    .letter {
+        max-width: 375px;
+    }
 }
