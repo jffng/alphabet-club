@@ -1,0 +1,14 @@
+{
+  "name": "alphabet",
+  "version": "1.0.0",
+  "description": "find bars by first letter",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "jeff ong",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
