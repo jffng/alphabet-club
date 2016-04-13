@@ -2,24 +2,25 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no"/>
     <link href="styles.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <div class="prompt">
-        I need a bar whose name begins with <input class="letter" autofocus="autofocus" placeholder="letter"><br>near <input class="neighborhood" placeholder="neighborhood">
-        <br><button id="submit">Submit</button>
+        I need a bar whose name begins with <input class="letter" autofocus="autofocus" placeholder="letter"><br>near <input class="neighborhood" placeholder="address / hood">
+        <div class="error"></div>
+        <button id="submit">Submit</button>
       </div>
       <div class="results">
         <div class="loader">
           Loading ...
-          <!-- <img src="default.gif"> -->
         </div>
+        <img class="gif" src="soup.gif">
+        <div id="map"></div>
         <ul></ul>
         <div class="help">(links to Google Maps)</div>
       </div>
-      <div id="map"></div>
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?libraries=places" async defer></script>
     <script type="text/javascript" src="vendor/jquery.min.js"></script>
